@@ -75,6 +75,8 @@ public class NavigateProductCategories_StepDefs {
 
         String[] information = cartPage.purchaseInfo.getText().split("\n");
         String actualAmount = cartPage.returnNumberFromString(information[1]);
+        System.out.println(information[0]);
+        System.out.println(information[1]);
 
         return actualAmount;
     }
